@@ -1,0 +1,23 @@
+{
+  "server": {
+    "instances": [
+      {
+        "label": "public",
+        "port": "4964"
+      }
+    ]
+  },
+  "app_config": {
+    "postgres": {
+      "connectionstring": "postgres://sds-v.sarath:root@localhost/sso_service",
+      "poolSize": 5
+    },
+    "jwt": {
+      "expiry": 3600,
+      "refresh": 0,
+      "secret": "NzMwNWQ5NDMtOWUzYy00MjRhLTk1ODYtZjFlNTJkNjcyNmI0"
+    }
+  },
+  "schema_version": "v1.0.0",
+  "service_name": "test"
+}
